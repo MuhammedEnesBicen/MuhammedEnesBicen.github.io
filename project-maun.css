@@ -1,0 +1,110 @@
+html{
+    scroll-behavior: smooth ;
+    /* transition: all 0.5s ease; */
+}
+body{
+    background-color: #0f172a;
+    color: #94a3b8;
+    
+    padding: 0;
+    margin: 0;
+    font-size: larger;
+    /* font-family: var(--font-inter),ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji"; */
+}
+
+main{
+    margin: 5% 0 0 3% ;
+}
+
+  h1{
+    font-size: 3rem;
+}
+h3{
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+h1,h2,h3,h4{
+    color: aliceblue;
+}
+
+main > .row{
+    display: flex;
+}
+
+main > .row > div{
+flex: 1 1;
+}
+main > .row > div:first-child{
+    padding-right: 20px;
+}
+
+
+.scroll{
+    height: 80vh;
+    overflow-x: auto;
+    overflow-y: hidden;
+    white-space: nowrap;
+    padding-bottom: 60px;
+    scrollbar-color: rgb(94 234 212) #122b39;;
+    scrollbar-width: thin;
+}
+.scroll> div{
+    display: inline-block;
+    margin-right: 30px;
+}
+
+.scroll > div > img {
+    max-height: 80vh;
+    max-width: 80vw;
+
+
+}
+.scroll > div > h3{
+    text-align: center;
+    padding: 3px 3px;
+    margin: 0;
+}
+
+#app-images{
+    display: none;
+}
+
+.badges{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+
+}
+.badges > span{
+    color:#5eead4;
+    background-color: #122b39;
+    padding: 5px 10px;
+    border-radius: 15px;
+    font-weight: inherit;
+}
+
+span {
+    color:whitesmoke;
+    font-weight: 600;
+}
+
+@media screen and (max-width:700px) {
+    html{
+        margin: 0;
+    }
+    main{
+        margin: 5% 0 0 10px ;
+    }
+    main > .row{
+        display: block;
+    
+    }
+    #app-images{
+        display: block;
+    }
+
+    main > .row > div:first-child{
+        margin-bottom: 50px;
+    }
+}
+
