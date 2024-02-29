@@ -88,6 +88,10 @@ span {
     font-weight: 600;
 }
 
+.scroll > div {
+    text-align: center;
+    }
+
 @media screen and (max-width:700px) {
     html{
         margin: 0;
@@ -106,5 +110,6 @@ span {
     main > .row > div:first-child{
         margin-bottom: 50px;
     }
+
 }
 
